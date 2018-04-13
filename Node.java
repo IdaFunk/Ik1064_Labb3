@@ -4,14 +4,14 @@ package singelLinkedList;
 //Hej Todd, Detta funkar :D:D
 public class Node {
 
-    private Node next;
-    private E data;
+    private Node nextNode;
+    private Object newItem;
 
     public Node(Object newItem)
 
     public Node(Node nextNode, Object newItem) {
-       this.next = next;
-       this.data = data;
+       this.nextNode = nextNode;
+       this.data = newItem;
     }
 
     public Node getNext() {
