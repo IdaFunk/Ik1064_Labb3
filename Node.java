@@ -1,5 +1,5 @@
 package singelLinkedList;
-
+// Hej, Ida. Funkar det här?
 public class Node<E> {
 
     private Node<E> next;
