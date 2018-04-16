@@ -7,27 +7,29 @@ public class Node {
     private Node nextNode;
     private Object newItem;
 
-    public Node(Object newItem)
+    public Node(Object newItem){
+        this.nextNode = nextNode;
+    }
 
     public Node(Node nextNode, Object newItem) {
        this.nextNode = nextNode;
-       this.data = newItem;
+       this.newItem = newItem;
     }
 
-    public Node getNext() {
-        return next;
+
+    public Object getNewItem() {
+        return newItem;
     }
 
-    public void setNext(Node next) {
-        this.next = next;
+    public void setNewItem(Object newItem) {
+        this.newItem = newItem;
     }
 
-    public E getData() {
-        return data;
+    public Node getNextNode() {
+        return nextNode;
     }
 
-    public void setData(E data) {
-        this.data = data;
+    public void setNextNode(Node nextNode) {
+        this.nextNode = nextNode;
     }
-
 }
